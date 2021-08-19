@@ -22,10 +22,6 @@ app.add_middleware(
 def index():
     return {"greeting": "Hello world"}
 
-
-from datetime import datetime
-import pytz
-
 # create a datetime object from the user provided datetime
 pickup_datetime = "2021-05-30 10:12:00"
 pickup_datetime = datetime.strptime(pickup_datetime, "%Y-%m-%d %H:%M:%S")
